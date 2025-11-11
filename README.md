@@ -27,7 +27,7 @@ npm install
 Para iniciar o servidor de desenvolvimento local:
 
 ```bash
-npm run docs:dev
+npm run dev
 ```
 
 O site estará disponível em `http://localhost:5173` (ou outra porta se 5173 estiver ocupada).
@@ -39,8 +39,8 @@ O servidor de desenvolvimento possui hot-reload, então as alterações nos arqu
 Para visualizar a versão de produção localmente (após o build):
 
 ```bash
-npm run docs:build
-npm run docs:preview
+npm run build
+npm run preview
 ```
 
 Isso irá:
@@ -52,7 +52,7 @@ Isso irá:
 Para gerar os arquivos estáticos do site para produção:
 
 ```bash
-npm run docs:build
+npm run build
 ```
 
 Os arquivos gerados estarão na pasta `.vitepress/dist` (ou na pasta configurada no VitePress).
@@ -67,7 +67,7 @@ Os arquivos gerados estarão na pasta `.vitepress/dist` (ou na pasta configurada
 ```json
 {
   "scripts": {
-    "docs:deploy": "npm run docs:build && gh-pages -d .vitepress/dist"
+    "deploy": "npm run build && gh-pages -d .vitepress/dist"
   }
 }
 ```
@@ -79,28 +79,28 @@ npm install --save-dev gh-pages
 
 4. Execute o deploy:
 ```bash
-npm run docs:deploy
+npm run deploy
 ```
 
 ### Deploy no Netlify
 
 1. Conecte seu repositório ao Netlify
 2. Configure as seguintes opções:
-   - **Build command**: `npm run docs:build`
+   - **Build command**: `npm run build`
    - **Publish directory**: `.vitepress/dist`
 
 ### Deploy no Vercel
 
 1. Conecte seu repositório ao Vercel
 2. Configure:
-   - **Build command**: `npm run docs:build`
+   - **Build command**: `npm run build`
    - **Output directory**: `.vitepress/dist`
 
 ### Deploy Manual
 
 1. Execute o build:
 ```bash
-npm run docs:build
+npm run build
 ```
 
 2. Faça upload do conteúdo da pasta `.vitepress/dist` para seu servidor web
@@ -119,9 +119,9 @@ site-oficial-aiscgre-br/
 
 ## 📝 Scripts Disponíveis
 
-- `npm run docs:dev` - Inicia o servidor de desenvolvimento
-- `npm run docs:build` - Gera os arquivos estáticos para produção
-- `npm run docs:preview` - Visualiza a versão de produção localmente
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera os arquivos estáticos para produção
+- `npm run preview` - Visualiza a versão de produção localmente
 
 ## 🔧 Configuração
 
