@@ -6,5 +6,8 @@
   },
   "dependencies": {
     "vue": "^3.5.24"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.12"
   }
 }
