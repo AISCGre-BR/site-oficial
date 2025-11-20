@@ -15,15 +15,24 @@
   <div class="slider" aria-label="Galeria de manuscritos e encontros">
     <div class="slides">
       <figure class="slide">
-        <img src="/slider-images/slide-1.jpg" alt="Manuscrito iluminado com neumas" />
+        <picture>
+          <source srcset="/slider-images/slide-1.webp" type="image/webp" />
+          <img src="/slider-images/slide-1.jpg" alt="Manuscrito iluminado com neumas" loading="lazy" decoding="async" />
+        </picture>
         <figcaption>Neumas e rubricados em destaque para lembrar a tradição editorial da AISCGre.</figcaption>
       </figure>
       <figure class="slide">
-        <img src="/slider-images/slide-2.jpg" alt="Cantores em formação litúrgica" />
+        <picture>
+          <source srcset="/slider-images/slide-2.webp" type="image/webp" />
+          <img src="/slider-images/slide-2.jpg" alt="Cantores em formação litúrgica" loading="lazy" decoding="async" />
+        </picture>
         <figcaption>Cursos práticos em corais e sessões de escuta guiada pela coordenação brasileira.</figcaption>
       </figure>
       <figure class="slide">
-        <img src="/slider-images/slide-3.jpg" alt="Página de caderno acadêmico" />
+        <picture>
+          <source srcset="/slider-images/slide-3.webp" type="image/webp" />
+          <img src="/slider-images/slide-3.jpg" alt="Página de caderno acadêmico" loading="lazy" decoding="async" />
+        </picture>
         <figcaption>Publicações, teses e diálogos com universidades construindo pesquisa viva.</figcaption>
       </figure>
       <!-- placeholder: adicione novos slides colocando arquivos em docs/slider-images e referencie-os aqui -->
