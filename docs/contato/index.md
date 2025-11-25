@@ -1,13 +1,21 @@
+---
+title: Contato
+---
+
 # Contato
+
+Entre em contato para informações sobre cursos, propostas de parceria ou dúvidas sobre o trabalho da AISCGre Brasil.
 
 ## Como nos encontrar
 
-- **Email oficial**: <aiscgre-brasil@example.org>  
-- **Lista de interesse**: solicite inclusão via e-mail para receber notícias sobre cursos e eventos.  
-- **Redes sociais**: links e ícones serão adicionados assim que as contas forem definidas. <!-- placeholder: substituir pelos links reais -->
+- **E-mail oficial**: <aiscgre-brasil@example.org>
+- **Lista de interesse**: solicite inclusão via e-mail para receber notícias sobre cursos e eventos.
+- **Redes sociais**: serão publicadas assim que as contas oficiais forem confirmadas.
 
-## Mensagem acolhedora
+## Perguntas frequentes
 
-Estamos à disposição para responder informações sobre cursos, propor parcerias ou esclarecer dúvidas sobre o canto gregoriano. Envie-nos uma mensagem e indicaremos o caminho que melhor se adapta à sua comunidade.
+- **Como me inscrevo nos cursos?** Consulte `/cursos/` e envie o formulário indicado em cada página de curso.
+- **Posso convidar a equipe para uma formação local?** Sim, escreva para o e-mail oficial com datas sugeridas e público.
+- **Há materiais disponíveis para estudo?** Estatutos, roteiros e referências são mantidos em `/documentos/` e `/biblioteca/`.
 
-> <!-- placeholder: quando necessário, reutilize parte do docs/lorem-ipsum.md para textos maiores -->
+> <!-- placeholder: complementos textuais podem reaproveitar trechos de docs/lorem-ipsum.md -->

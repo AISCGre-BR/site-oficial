@@ -1,16 +1,29 @@
-# Eventos e encontros
+---
+title: Projetos e Eventos
+---
+
+# Projetos & Eventos
+
+Reunimos jornadas formativas, celebrações e congressos que conectam o repertório gregoriano à vida das comunidades e ao
+debate acadêmico.
 
 ## Próximos eventos
 
-- **Seminário de Neumas e Canto Sangalense** – São Paulo (setembro).  
-  Peças selecionadas do gradual, debates com convidados e aulas práticas.  
-- **Retiros de canto gregoriano** – diversas dioceses (outubro).  
-  Experiências concentradas de estudo, canto e escuta meditativa.
+- **Dies Gregoriani 2025** – São Paulo (setembro). Jornada intensiva de canto e estudo semiológico.
+- **Gregorianus de Vespera** – Belo Horizonte (outubro). Celebração vespertina com coro ampliado e preparação litúrgica.
+- **Congresso de Pesquisa em Paleografia** – Rio de Janeiro (novembro). Mesas redondas e apresentações de pesquisas em
+  andamento.
 
 ## Eventos anteriores
 
-- **Jornadas Acadêmicas de Modalidade** – Brasília, março.  
-- **Encontro Regional de Coros Litúrgicos** – Curitiba, novembro.  
-- **Mesa redonda sobre palaeografia digital** – Brasília, julho.
+- **Jornadas Acadêmicas de Modalidade** – Brasília, março 2024.
+- **Encontro Regional de Coros Litúrgicos** – Curitiba, novembro 2023.
+- **Mesa redonda sobre paleografia digital** – Brasília, julho 2023.
 
-<!-- placeholder: descrição estendida pode reutilizar docs/lorem-ipsum.md para blocos maiores -->
+Para descrição completa de cada iniciativa, visite as páginas dedicadas:
+
+- [Dies Gregoriani](/eventos/dies-gregoriani)
+- [Gregorianus de Vespera](/eventos/gregorianus-de-vespera)
+- [Congressos](/eventos/congressos)
+
+<!-- placeholder: estenda os relatos com trechos do docs/lorem-ipsum.md quando necessário -->

@@ -1,17 +1,27 @@
-# Sobre a AISCGre Brasil
+---
+title: Sobre a AISCGre
+---
+
+# Sobre a AISCGre
 
 ## História e missão global
 
-A AISCGre (Associação Internacional de Estudos de Canto Gregoriano) nasceu da necessidade de preservar a tradição do canto litúrgico com métodos documentados e acadêmicos. As seções espalhadas pelo mundo coordenam cursos, pesquisas e partilhas de repertório, sempre guiadas pela orientação semiológica, que privilegia a leitura dos neumas dentro do contexto histórico original.
+A AISCGre (Associação Internacional para o Estudo do Canto Gregoriano) reúne pesquisadores e músicos dedicados à
+transmissão do repertório litúrgico conforme os manuscritos medievais. A orientação semiológica privilegia a leitura
+dos neumas no contexto histórico, permitindo que a prática coral recupere nuances de ritmo, respiração e acentuação.
 
-## A seção brasileira
+## Orientação semiológica
 
-Desde a sua constituição, buscamos adaptar essa visão internacional para o Brasil: curamos formações, fomentamos publicações e mantemos um canal direto com coros e instituições litúrgicas. Declaramos nosso compromisso com a estética dos manuscritos, o respeito ao latim ritual e a disciplina intelectual que exige o canto gregoriano.
+Leitura comparada de fontes, uso crítico de edições e atenção à formação vocal constituem o núcleo do método. O estudo
+semiológico não é apenas erudito: ele serve à vida celebrativa e mantém a música litúrgica em diálogo com a pesquisa.
+Para desenvolver explicações mais longas, reutilize trechos de <code>docs/lorem-ipsum.md</code> enquanto o texto definitivo
+estiver em elaboração.
 
-## Objetivos
+## Objetivos gerais
 
-- Promover cursos de formação regulares e encontros de coro.  
-- Incentivar pesquisa e publicação de partituras, artigos e gravações.  
+- Promover cursos de formação regulares e encontros de coro.
+- Incentivar pesquisa e publicação de partituras, artigos e gravações.
 - Apoiar coros, comunidades litúrgicas e estudantes com orientações técnicas e espirituais.
+- Manter intercâmbio com as demais seções internacionais da AISCGre.
 
-<!-- placeholder: textos complementares podem reutilizar blocos do docs/lorem-ipsum.md -->
+<!-- placeholder: insira citações ou notas históricas adicionais reutilizando conteúdo de lorem-ipsum.md -->
