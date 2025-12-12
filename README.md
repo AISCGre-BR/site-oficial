@@ -1,12 +1,12 @@
 # Site Oficial AISCGre Brasil
 
-Site oficial da Seção Brasileira da AISCGre (Associação Internacional de Estudos de Canto Gregoriano), construído com [VitePress](https://vitepress.dev/).
+Site oficial da Seção Brasileira da AISCGre (Associação Internacional de Estudos de Canto Gregoriano), construído com [VitePress](https://vitepress.dev/). O conteúdo principal agora está organizado dentro da pasta `docs`, com a configuração em `docs/.vitepress/` e suporte a identidade visual inspirada em manuscritos gregorianos.
 
 ## 📋 Pré-requisitos
 
 Antes de começar, certifique-se de ter instalado:
 
-- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)  
 - [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
 ## 🚀 Instalação
@@ -24,15 +24,13 @@ npm install
 
 ## 💻 Desenvolvimento
 
-Para iniciar o servidor de desenvolvimento local:
+Para iniciar o servidor de desenvolvimento local com o conteúdo da pasta `docs`:
 
 ```bash
 npm run dev
 ```
 
-O site estará disponível em `http://localhost:5173` (ou outra porta se 5173 estiver ocupada).
-
-O servidor de desenvolvimento possui hot-reload, então as alterações nos arquivos Markdown serão refletidas automaticamente no navegador.
+O site estará disponível em `http://localhost:5173` (ou outra porta se 5173 estiver ocupada) e utiliza hot-reload para refletir alterações nos arquivos Markdown.
 
 ## 🧪 Teste / Preview
 
@@ -44,7 +42,7 @@ npm run preview
 ```
 
 Isso irá:
-1. Gerar os arquivos estáticos do site
+1. Gerar os arquivos estáticos do site em `docs/.vitepress/dist`
 2. Iniciar um servidor local para visualizar a versão de produção
 
 ## 🏗️ Build
@@ -55,93 +53,52 @@ Para gerar os arquivos estáticos do site para produção:
 npm run build
 ```
 
-Os arquivos gerados estarão na pasta `.vitepress/dist` (ou na pasta configurada no VitePress).
-
-## 📦 Deploy
-
-### Deploy no GitHub Pages
-
-1. Configure o VitePress para usar a base correta no arquivo de configuração (se necessário)
-
-2. Adicione um script de deploy no `package.json`:
-```json
-{
-  "scripts": {
-    "deploy": "npm run build && gh-pages -d .vitepress/dist"
-  }
-}
-```
-
-3. Instale o `gh-pages` como dependência de desenvolvimento:
-```bash
-npm install --save-dev gh-pages
-```
-
-4. Execute o deploy:
-```bash
-npm run deploy
-```
-
-### Deploy no Netlify
-
-1. Conecte seu repositório ao Netlify
-2. Configure as seguintes opções:
-   - **Build command**: `npm run build`
-   - **Publish directory**: `.vitepress/dist`
-
-### Deploy no Vercel
-
-1. Conecte seu repositório ao Vercel
-2. Configure:
-   - **Build command**: `npm run build`
-   - **Output directory**: `.vitepress/dist`
-
-### Deploy Manual
-
-1. Execute o build:
-```bash
-npm run build
-```
-
-2. Faça upload do conteúdo da pasta `.vitepress/dist` para seu servidor web
+Os arquivos gerados estarão na pasta `docs/.vitepress/dist`.
 
 ## 📁 Estrutura do Projeto
 
 ```
 site-oficial-aiscgre-br/
-├── .vitepress/          # Configurações do VitePress (se existir)
-├── index.md             # Página inicial
-├── api-examples.md      # Exemplos de API
-├── markdown-examples.md # Exemplos de Markdown
-├── package.json         # Dependências e scripts
-└── README.md           # Este arquivo
+├── docs/                # Conteúdo do site (páginas e estrutura em markdown)
+│   ├── .vitepress/      # Configurações de tema, navegação e assets públicos
+│   ├── index.md         # Página inicial personalizada
+│   ├── sobre/           # Página institucional
+│   ├── cursos/          # Cursos e módulos
+│   ├── eventos/         # Eventos e encontros
+│   ├── publicacoes/     # Publicações acadêmicas
+│   ├── equipe/           # Coordenação e conselho
+│   ├── contato/          # Informações de contato
+│   └── lorem-ipsum.md   # Texto auxiliar para placeholder
+├── package.json         # Dependências e scripts (aponta para docs)
+├── package-lock.json    # Lockfile de dependências
+├── README.md            # Este arquivo
+└── instrucoes.md        # Briefing original para referência
 ```
 
 ## 📝 Scripts Disponíveis
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Gera os arquivos estáticos para produção
-- `npm run preview` - Visualiza a versão de produção localmente
+- `npm run dev` - Inicia o servidor de desenvolvimento (aponta para `docs`)  
+- `npm run build` - Gera os arquivos estáticos para produção  
+- `npm run preview` - Visualiza a versão de produção localmente  
 
 ## 🔧 Configuração
 
-O VitePress pode ser configurado através de um arquivo `.vitepress/config.js` ou `.vitepress/config.ts`. Consulte a [documentação oficial do VitePress](https://vitepress.dev/reference/site-config) para mais detalhes.
+Edite `docs/.vitepress/config.ts` para ajustar nav, sidebar e identidade visual. Os estilos globais ficam em `docs/.vitepress/theme/styles/index.css` e o logo está em `docs/.vitepress/public/logo.svg`.
 
 ## 📚 Recursos
 
-- [Documentação do VitePress](https://vitepress.dev/)
-- [Guia de Configuração](https://vitepress.dev/reference/site-config)
+- [Documentação do VitePress](https://vitepress.dev/)  
+- [Guia de Configuração](https://vitepress.dev/reference/site-config)  
 - [Tema Padrão](https://vitepress.dev/reference/default-theme-config)
 
 ## 🤝 Contribuindo
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)
-4. Push para a branch (`git push origin feature/MinhaFeature`)
+1. Faça um fork do projeto  
+2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)  
+3. Commit suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)  
+4. Push para a branch (`git push origin feature/MinhaFeature`)  
 5. Abra um Pull Request
 
 ## 📄 Licença
 
 [Adicione informações sobre a licença aqui]
-
