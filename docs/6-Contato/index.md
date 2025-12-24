@@ -1,0 +1,1 @@
+<!--@include:../lorem-ipsum.md-->
