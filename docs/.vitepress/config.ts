@@ -2,26 +2,29 @@ import { defineConfig } from 'vitepress';
 
 const nav = [
   { text: 'Início', link: '/' },
-  {
-    text: 'Sobre',
-    items: [
-      { text: 'AISCGre – Internacional', link: '/sobre/' },
-      { text: 'Seção Brasileira', link: '/sobre/secao-brasileira' }
-    ]
-  },
-  { text: 'Cursos', link: '/cursos/' },
-  {
-    text: 'Projetos & Eventos',
-    items: [
-      { text: 'Dies Gregoriani', link: '/eventos/dies-gregoriani' },
-      { text: 'Gregorianus de Vespera', link: '/eventos/gregorianus-de-vespera' },
-      { text: 'Congressos', link: '/eventos/congressos' }
-    ]
-  },
-  { text: 'Documentos', link: '/documentos/' },
-  { text: 'Biblioteca', link: '/biblioteca/' },
-  { text: 'Notícias', link: '/noticias/' },
-  { text: 'Contato', link: '/contato' }
+  // {
+  //   text: 'Sobre',
+  //   items: [
+  //     { text: 'AISCGre – Internacional', link: '/sobre/' },
+  //     { text: 'Seção Brasileira', link: '/sobre/secao-brasileira' }
+  //   ]
+  // },
+  // { text: 'Cursos', link: '/cursos/' },
+  // {
+  //   text: 'Projetos & Eventos',
+  //   items: [
+  //     { text: 'Dies Gregoriani', link: '/eventos/dies-gregoriani' },
+  //     { text: 'Gregorianus de Vespera', link: '/eventos/gregorianus-de-vespera' },
+  //     { text: 'Congressos', link: '/eventos/congressos' }
+  //   ]
+  // },
+  { text: 'Seção Internacional', link: '/1-AISCGre-Internacional/' },
+  { text: 'Seção Brasileira', link: '/2-AISCGre-Brasil/' },
+  { text: 'Canto Gregoriano', link: '/3-Canto-Gregoriano/' },
+  { text: 'Notícias e Agenda', link: '/4-Noticias-Agenda' },
+  { text: 'Publicações', link: '/5-Publicacoes/' },
+  { text: 'Contato', link: '/6-Contato/' },
+  
 ];
 
 export default defineConfig({
