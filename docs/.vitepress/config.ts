@@ -33,6 +33,9 @@ export default defineConfig({
     'Seção Brasileira da AISCGre dedicada ao ensino, pesquisa e prática do canto gregoriano em orientação semiológica.',
   lastUpdated: true,
   head: [
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicon-192x192.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/favicon-512x512.png' }],
     ['meta', { name: 'theme-color', content: '#f5f1e8' }],
     ['meta', { name: 'keywords', content: 'gregoriano, AISCGre, canto, semiologia' }],
     [
@@ -45,7 +48,6 @@ export default defineConfig({
   ],
   themeConfig: {
     nav,
-    sidebar: false,
     outline: false,
     logo: '/logo-aiscgre-brasil.png',
     footer: {
