@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   color-scheme: light;
   --font-serif: 'EB Garamond', 'Times New Roman', serif;
@@ -125,6 +127,14 @@ h6 {
 blockquote {
   font-family: var(--font-serif);
   font-style: italic;
+}
+
+.vp-doc p,
+.vp-doc li,
+.VPDoc p,
+.VPDoc li {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .dark h1,
