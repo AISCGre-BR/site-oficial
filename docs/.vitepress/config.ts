@@ -18,8 +18,8 @@ const nav = [
   //     { text: 'Congressos', link: '/eventos/congressos' }
   //   ]
   // },
-  { text: 'Seção Internacional', link: '/1-AISCGre-Internacional/' },
-  { text: 'Seção Brasileira', link: '/2-AISCGre-Brasil/' },
+  { text: 'Sobre a AISCGre', link: '/1-AISCGre-Internacional/' },
+  { text: 'Corpo Diretivo', link: '/2-AISCGre-Brasil/' },
   { text: 'Canto Gregoriano', link: '/3-Canto-Gregoriano/' },
   { text: 'Notícias e Agenda', link: '/4-Noticias-Agenda' },
   { text: 'Publicações', link: '/5-Publicacoes/' },
