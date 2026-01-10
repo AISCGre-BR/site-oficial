@@ -24,6 +24,7 @@ const nav = [
   { text: 'Notícias e Agenda', link: '/4-Noticias-Agenda' },
   { text: 'Publicações', link: '/5-Publicacoes/' },
   { text: 'Contato', link: '/6-Contato/' },
+  { text: 'FAQ', link: '/faq.md' }
   
 ];
 
