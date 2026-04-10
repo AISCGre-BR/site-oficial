@@ -422,39 +422,53 @@ main,
   position: relative;
   overflow: hidden;
   border-radius: 18px;
-  background: linear-gradient(120deg, rgba(43, 33, 23, 0.65), rgba(122, 31, 43, 0.5)),
+  background: linear-gradient(120deg, rgba(250, 246, 240, 0.95), rgba(245, 235, 220, 0.9)),
     url('/images/hero-manuscrito.jpg') center/cover no-repeat;
-  color: #fdf9f1;
+  color: #2b2118;
   padding: clamp(2rem, 5vw, 3.5rem);
   margin: 2rem auto 2.5rem;
   max-width: 1200px;
   width: min(1200px, 95vw);
-  box-shadow: 0 24px 60px rgba(43, 33, 23, 0.25);
+  box-shadow: 0 24px 60px rgba(43, 33, 23, 0.15);
 }
 
 .dark .home-hero {
-  background: linear-gradient(120deg, rgba(12, 8, 5, 0.8), rgba(63, 30, 26, 0.7)),
+  background: linear-gradient(120deg, rgba(18, 14, 10, 0.95), rgba(32, 20, 16, 0.9)),
     url('/images/hero-manuscrito.jpg') center/cover no-repeat;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  color: #fdf9f1;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
 }
 
 .home-hero .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.85rem;
-  color: #f2dcc0;
+  color: #6b5644;
 }
 
 .home-hero h1 {
   margin: 0.4rem 0 0.6rem;
   font-size: clamp(2.4rem, 4vw, 3.1rem);
-  color: #fff9ef;
+  color: #2b2118;
 }
 
 .home-hero p {
   margin: 0;
   max-width: 640px;
-  color: #f3e8d8;
+  color: #4a3829;
+  line-height: 1.6;
+}
+
+.dark .home-hero .eyebrow {
+  color: #d4c4b0;
+}
+
+.dark .home-hero h1 {
+  color: #fff9ef;
+}
+
+.dark .home-hero p {
+  color: #e8dcc8;
 }
 
 .hero-actions {

@@ -4,8 +4,12 @@ title: AISCGre – Seção Brasileira
 ---
 
 <section class="home-hero">
-  <p class="eyebrow">Associação Internacional para o Estudo do Canto Gregoriano</p>
-  <h1>AISCGre – Seção Brasileira</h1>
+  <div class="flex justify-center mb-8">
+    <picture>
+      <source srcset="/assets/logo/logo-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="/assets/logo/logo-light.png" alt="AISCGre – Seção Brasileira" class="hero-logo">
+    </picture>
+  </div>
   <p>
     Centro oficial de estudo, ensino e prática do canto gregoriano no Brasil, em diálogo constante com a orientação
     semiológica e a tradição manuscrita mantida pela AISCGre internacional.
