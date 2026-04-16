@@ -4,8 +4,6 @@ title: Seção Brasileira da AISCGre
 
 # Seção Brasileira
 
-<div class="page-glass">
-
 ## Vocação e contexto
 
 A seção brasileira conecta a tradição internacional da AISCGre às realidades pastorais e acadêmicas do país. Os cursos
@@ -26,5 +24,3 @@ E-mail oficial: <aiscgre-brasil@example.org>
 Para solicitar agenda de cursos ou convidar a equipe para formações locais, use o formulário em `/contato`.
 
 > _Conteúdo provisório. Este texto será substituído por material definitivo._
-
-</div>

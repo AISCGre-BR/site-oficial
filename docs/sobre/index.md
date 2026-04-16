@@ -2,8 +2,6 @@
 title: Sobre a AISCGre
 ---
 
-<div class="page-glass">
-
 # Sobre a AISCGre
 
 ## História e missão global
@@ -27,5 +25,3 @@ estiver em elaboração.
 - Manter intercâmbio com as demais seções internacionais da AISCGre.
 
 <!-- placeholder: insira citações ou notas históricas adicionais reutilizando conteúdo de lorem-ipsum.md -->
-
-</div>

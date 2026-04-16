@@ -27,16 +27,18 @@ const nav = [
 export default defineConfig({
   title: 'AISCGre Brasil',
   description:
-    'Seção Brasileira da AISCGre dedicada ao ensino, pesquisa e prática do canto gregoriano em orientação semiológica.',
+    'Seção Brasileira da AISCGre — estudo, ensino e prática do canto gregoriano sob orientação semiológica.',
   lastUpdated: true,
   head: [
-    ['meta', { name: 'theme-color', content: '#f5f1e8' }],
-    ['meta', { name: 'keywords', content: 'gregoriano, AISCGre, canto, semiologia' }],
+    ['meta', { name: 'theme-color', content: '#f6f1e7' }],
+    ['meta', { name: 'keywords', content: 'canto gregoriano, AISCGre, semiologia, neumas, schola' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     [
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap'
       }
     ]
   ],
@@ -44,11 +46,11 @@ export default defineConfig({
     nav,
     sidebar: false,
     outline: false,
-    logo: '/logo-aiscgre-brasil.png',
+    logo: '/brand/icon.svg',
+    siteTitle: 'AISCGre Brasil',
     footer: {
-      message: 'Construído pela AISCGre Brasil com base em VitePress',
+      message: 'Associação Internacional de Estudo do Canto Gregoriano — Seção Brasileira',
       copyright: '© ' + new Date().getFullYear() + ' AISCGre Brasil'
-    },
-    socialLinks: [{ icon: 'mail', link: 'mailto:aiscgre-brasil@example.org' }]
+    }
   }
 });
