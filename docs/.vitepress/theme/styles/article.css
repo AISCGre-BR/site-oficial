@@ -23,8 +23,6 @@
 .article__eyebrow {
   font-size: 0.78rem;
   color: var(--rubric);
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
   letter-spacing: 0.22em;
   font-weight: 520;
   margin: 0;
@@ -65,9 +63,7 @@
   display: block;
   color: var(--rubric);
   font-size: 0.7rem;
-  text-transform: lowercase;
   letter-spacing: 0.2em;
-  font-feature-settings: "smcp" on, "c2sc" on;
   margin-bottom: 0.3rem;
   font-weight: 560;
 }
@@ -129,8 +125,6 @@
   font-style: normal;
   font-size: 0.8rem;
   color: var(--ink-muted);
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
   letter-spacing: 0.14em;
 }
 

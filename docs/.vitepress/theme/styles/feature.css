@@ -11,8 +11,6 @@
 .feature__kicker {
   font-size: 0.78rem;
   color: var(--rubric);
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
   letter-spacing: 0.22em;
   font-weight: 520;
   margin: 0;
@@ -42,8 +40,6 @@
   font-weight: 560;
   color: var(--ink);
   font-size: 0.72rem;
-  text-transform: lowercase;
   letter-spacing: 0.18em;
-  font-feature-settings: "smcp" on, "c2sc" on;
   margin-bottom: 0.3rem;
 }

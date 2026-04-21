@@ -22,12 +22,10 @@
 }
 
 .section__label {
-  font-size: 0.78rem;
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
-  letter-spacing: 0.2em;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
   color: var(--rubric);
-  font-weight: 520;
+  font-weight: 560;
   margin: 0;
   padding-top: 0.45rem;
   position: relative;

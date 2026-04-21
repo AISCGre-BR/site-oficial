@@ -32,8 +32,7 @@
   display: inline-block;
   color: var(--rubric);
   font-size: 0.72rem;
-  font-feature-settings: "smcp" on, "c2sc" on, "tnum" on, "lnum" on;
-  text-transform: lowercase;
+  font-feature-settings: "lnum" on, "tnum" on;
   letter-spacing: 0.16em;
   font-weight: 560;
   margin-right: 0.5rem;

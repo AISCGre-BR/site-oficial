@@ -16,15 +16,15 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
   <section class="hero hero--split" id="inicio" aria-labelledby="hero-title">
     <div class="hero__grid hero__grid--split">
       <div class="hero__text">
-        <p class="hero__kicker">associação internacional · seção brasileira</p>
+        <p class="hero__kicker">Associação Internacional · Seção Brasileira</p>
         <h1 class="hero__title" id="hero-title">
-          <span class="rubric-initial">P</span>esquisar, ensinar e <em>cantar</em> o repertório gregoriano no Brasil.
+          <span class="rubric-initial">P</span>esquisar, ensinar e <em>interpretar</em> o repertório gregoriano no Brasil.
         </h1>
         <p class="hero__dek">
-          A AISCGre Brasil dá continuidade, no país, à orientação semiológica inaugurada por Dom Eugène Cardine.
+          A AISCGre Brasil dá continuidade, no país, à orientação semiológica inaugurada por Dom Eugène Cardine, OSB.
         </p>
         <div class="hero__meta">
-          <a class="cta" href="#associe-se">Associe-se</a>
+          <a class="cta" href="#pessoa-fisica">Associe-se</a>
           <a class="cta cta--ghost" href="#aiscgre">Saiba mais</a>
         </div>
       </div>
@@ -50,7 +50,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
       <div class="section__body">
         <h2>Pesquisa, ensino e prática do canto gregoriano.</h2>
         <p>
-          A Associação Internacional de Estudos de Canto Gregoriano dá continuidade à orientação semiológica iniciada por <em>Dom Eugène Cardine</em> (1905–1988), guiada pelo princípio da simbiose entre texto e melodia.
+          A <a href="https://www.aiscgre.org/" target="_blank" rel="noopener">Associação Internacional de Estudos de Canto Gregoriano</a> dá continuidade à orientação semiológica iniciada por <em>Dom Eugène Cardine, OSB</em> (1905–1988), guiada pelo princípio da simbiose entre texto e melodia.
         </p>
 
         <div class="pairs">
@@ -91,7 +91,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
 
           <blockquote class="citation">
             <p>
-              A fundação da seção brasileira da AISCGre representa um passo importante no fortalecimento da pesquisa, da formação e da prática qualificada do canto gregoriano em nosso país, sempre em comunhão com o Magistério da Igreja e com o espírito do Concílio Vaticano II.
+              A fundação da Seção Brasileira da AISCGre representa um passo importante no fortalecimento da pesquisa, da formação e da prática qualificada do canto gregoriano em nosso país, sempre em comunhão com o Magistério da Igreja e com o espírito do Concílio Vaticano II.
             </p>
             <cite>Dom Ricardo Hoepers · Secretário-Geral da CNBB<br/>Mensagem ao <em>Laudis Canticum</em> · dezembro de 2025</cite>
           </blockquote>
@@ -103,7 +103,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
   <!-- THRESHOLD: contexto internacional -->
   <section class="threshold" aria-label="contexto internacional">
     <div class="threshold__inner">
-      <p class="threshold__kicker">contexto internacional</p>
+      <p class="threshold__kicker">Contexto Internacional</p>
       <blockquote class="threshold__quote">
         Mais de <em>700 membros</em> em <em>28 países</em>, organizados em seis seções — alemã, brasileira, espanhola, italiana, japonesa e polonesa.
       </blockquote>
@@ -190,56 +190,46 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
     </div>
   </section>
 
-  <!-- COROS -->
-  <section class="section section--alt" id="coros" aria-labelledby="sec-coros">
+  <!-- PESSOA FÍSICA -->
+  <section class="section section--alt" id="pessoa-fisica" aria-labelledby="sec-pf">
     <div class="section__inner">
-      <p class="section__label" id="sec-coros">Coros associados</p>
+      <p class="section__label" id="sec-pf">Associação para Pessoa Física</p>
       <div class="section__body">
-        <h2>Duas categorias de vínculo.</h2>
+        <h2>Para estudantes, pesquisadores, regentes, cantores e apoiadores.</h2>
         <p>
-          A AISCGre Brasil acolhe coros dedicados ao canto gregoriano e coros de repertório mais amplo que respeitem os princípios da semiologia quando executam o repertório gregoriano.
+          Podem associar-se aqueles que reconheçam e apoiem a missão da AISCGre Brasil e tenham interesse no estudo, na prática, na pesquisa ou na promoção do canto gregoriano. Entusiastas e apoiadores podem ser admitidos como colaboradores.
+        </p>
+        <p><a class="cta" :href="formIndividual" target="_blank" rel="noopener">Formulário Individual</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COROS E INSTITUIÇÕES -->
+  <section class="section" id="coros-instituicoes" aria-labelledby="sec-ci">
+    <div class="section__inner">
+      <p class="section__label" id="sec-ci">Associação para Coros e Instituições</p>
+      <div class="section__body">
+        <h2>Para Scholas, corais litúrgicos e instituições culturais.</h2>
+        <p>
+          A AISCGre Brasil acolhe tanto Coros dedicados ao canto gregoriano quanto Coros de repertório mais amplo que observam os princípios da semiologia ao executar o repertório gregoriano. Os Coros associados se classificam em duas categorias:
         </p>
 
         <div class="pairs pairs--equal">
           <div class="pair">
             <h3 class="pair__title">Efetivos</h3>
             <p>
-              Grupos com estudo e prática regulares segundo os princípios semiológicos reconhecidos pela AISCGre, com regente ou diretor(a) de formação comprovada na área.
+              Grupos com estudo e prática regulares segundo os princípios semiológicos reconhecidos pela AISCGre, com regente ou diretor(a) com formação comprovada na área.
             </p>
           </div>
           <div class="pair">
             <h3 class="pair__title">Afiliados</h3>
             <p>
-              Grupos que promovem ou incluem o canto gregoriano em seu repertório litúrgico, em vínculo institucional e cultural com a associação.
+              Grupos que promovem ou incluem o canto gregoriano em seu repertório, mantendo vínculo institucional e cultural com a associação.
             </p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ASSOCIE-SE -->
-  <section class="section" id="associe-se" aria-labelledby="sec-associe">
-    <div class="section__inner">
-      <p class="section__label" id="sec-associe">Associe-se</p>
-      <div class="section__body">
-        <h2>Pessoas físicas, coros e instituições são bem-vindos.</h2>
-        <p>
-          Podem associar-se quem reconheça e apoie a missão da AISCGre Brasil e tenha interesse no estudo, prática, pesquisa ou promoção do canto gregoriano. Entusiastas e apoiadores podem ser admitidos como colaboradores.
-        </p>
-
-        <div class="pairs pairs--equal cta-pairs">
-          <div class="pair">
-            <h3 class="pair__title">Pessoa física</h3>
-            <p>Estudantes, pesquisadores, regentes, cantores e apoiadores.</p>
-            <p><a class="cta" :href="formIndividual" target="_blank" rel="noopener">Formulário individual</a></p>
-          </div>
-          <div class="pair">
-            <h3 class="pair__title">Coros e instituições</h3>
-            <p>Scholas, corais litúrgicos, centros de formação e instituições culturais.</p>
-            <p><a class="cta" :href="formCoros" target="_blank" rel="noopener">Formulário para coros</a></p>
-          </div>
-        </div>
+        <p style="margin-top: var(--s-5);"><a class="cta" :href="formCoros" target="_blank" rel="noopener">Formulário para Coros e Instituições</a></p>
       </div>
     </div>
   </section>
@@ -305,8 +295,6 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
   font-style: normal;
   font-size: 0.78rem;
   letter-spacing: 0.1em;
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
   color: var(--ink-muted);
 }
 .photo__credit a {
@@ -345,18 +333,13 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
 .citation cite {
   display: block;
   font-style: normal;
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
   color: var(--ink-muted);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 .citation cite em {
   font-style: italic;
-  font-feature-settings: normal;
-  text-transform: none;
-  letter-spacing: 0;
   color: var(--ink-soft);
 }
 
@@ -377,10 +360,8 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
   .board { grid-template-columns: 1fr; gap: var(--s-5); }
 }
 .board__title {
-  font-size: 0.78rem;
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
-  letter-spacing: 0.2em;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
   color: var(--rubric);
   font-weight: 560;
   margin: 0 0 var(--s-3);
@@ -410,10 +391,8 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
 }
 .roster__row:last-child { border-bottom: none; }
 .roster dt {
-  font-size: 0.72rem;
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
-  letter-spacing: 0.14em;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
   color: var(--ink-muted);
   font-weight: 500;
   margin-bottom: 0.2rem;

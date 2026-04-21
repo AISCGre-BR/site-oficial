@@ -19,7 +19,7 @@ watch(() => route.path, () => { menuOpen.value = false })
       <div class="nav__inner">
         <a class="brand" href="/" aria-label="AISCGre Brasil, início">
           <img class="brand__mark" :src="iconUrl" alt="" />
-          <span class="brand__name">AISCGre Brasil<small>seção brasileira</small></span>
+          <span class="brand__name">AISCGre Brasil<small>Seção Brasileira</small></span>
         </a>
 
         <button
@@ -39,11 +39,10 @@ watch(() => route.path, () => { menuOpen.value = false })
 
         <nav aria-label="principal">
           <ul id="nav-links" class="nav__links" :class="{ open: menuOpen }" @click="menuOpen = false">
-            <li><a href="#aiscgre">aiscgre</a></li>
-            <li><a href="#fundamentos">fundamentos</a></li>
-            <li><a href="#secao-brasileira">seção brasileira</a></li>
-            <li><a href="#coros">coros</a></li>
-            <li><a href="#associe-se">associe-se</a></li>
+            <li><a href="#aiscgre">AISCGre</a></li>
+            <li><a href="#fundamentos">Fundamentos</a></li>
+            <li><a href="#secao-brasileira">Seção Brasileira</a></li>
+            <li><a href="#pessoa-fisica">Associe-se</a></li>
           </ul>
         </nav>
       </div>
@@ -64,7 +63,7 @@ watch(() => route.path, () => { menuOpen.value = false })
         <div class="foot__meta">
           <p>
             <strong>AISCGre — Seção Brasileira</strong><br/>
-            Associazione Internazionale Studi di Canto Gregoriano.
+            <a href="https://www.aiscgre.org/" target="_blank" rel="noopener">Associazione Internazionale Studi di Canto Gregoriano</a>.
           </p>
           <p class="foot__credits">
             Imagem do Codex Einsiedeln 121, p. 30:
@@ -75,7 +74,7 @@ watch(() => route.path, () => { menuOpen.value = false })
             <a href="https://www.instagram.com/beatrizclleal/" target="_blank" rel="noopener">@beatrizclleal</a>.
           </p>
         </div>
-        <p class="foot__colophon">MMXXVI · laus deo</p>
+        <p class="foot__colophon">MMXXVI · Laus Deo</p>
       </div>
     </footer>
   </div>

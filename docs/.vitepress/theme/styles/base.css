@@ -21,6 +21,18 @@ body {
 
 a { color: inherit; }
 
+/* Inline body links — discreet underline; excludes CTAs and other styled links */
+:where(p, li, cite) a:not([class]) {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: color 180ms ease, border-color 180ms ease;
+}
+:where(p, li, cite) a:not([class]):hover {
+  color: var(--rubric);
+  border-bottom-color: var(--rubric);
+}
+
 @keyframes rise {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
