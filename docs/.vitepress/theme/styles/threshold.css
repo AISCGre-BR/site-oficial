@@ -1,0 +1,56 @@
+.threshold {
+  background: var(--ink);
+  color: var(--cream);
+  padding: clamp(var(--s-6), 8vw, var(--s-9)) 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  position: relative;
+}
+
+.threshold__inner {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 0 var(--s-4);
+  text-align: center;
+  position: relative;
+}
+
+.threshold__inner::before,
+.threshold__inner::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: var(--rubric);
+  margin: 0 auto var(--s-5);
+}
+
+.threshold__inner::after {
+  margin: var(--s-5) auto 0;
+}
+
+.threshold__kicker {
+  font-size: 0.75rem;
+  color: var(--rubric-soft);
+  font-feature-settings: "smcp" on, "c2sc" on;
+  text-transform: lowercase;
+  letter-spacing: 0.28em;
+  font-weight: 520;
+  margin: 0 0 var(--s-4);
+}
+
+.threshold__quote {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.6vw + 0.6rem, 2.6rem);
+  line-height: 1.25;
+  letter-spacing: -0.012em;
+  color: var(--cream);
+  font-weight: 380;
+  font-style: normal;
+}
+
+.threshold__quote em {
+  color: var(--rubric-soft);
+  font-style: italic;
+  font-weight: 380;
+}

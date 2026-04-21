@@ -1,0 +1,31 @@
+.cta {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.7rem 0;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.98rem;
+  font-weight: 540;
+  letter-spacing: 0.002em;
+  border-bottom: 1px solid var(--ink);
+  transition: color 200ms ease, border-color 200ms ease, gap 200ms ease;
+}
+
+.cta::after {
+  content: "\2192";
+  display: inline-block;
+  transition: transform 220ms cubic-bezier(.2,.7,.2,1);
+  color: var(--rubric);
+}
+
+.cta:hover { color: var(--rubric); border-bottom-color: var(--rubric); gap: 1.1rem; }
+.cta:hover::after { transform: translateX(2px); }
+
+.cta--ghost {
+  border-bottom-color: transparent;
+  color: var(--ink-soft);
+  font-weight: 460;
+}
+
+.cta--ghost:hover { color: var(--rubric); }

@@ -1,4 +1,6 @@
 node_modules/
 bun.lock
+.git.bak-*/
+prototype/
 **/.vitepress/cache
 **/.vitepress/dist

@@ -1,104 +1,60 @@
 # Site Oficial AISCGre Brasil
 
-Site oficial da Seção Brasileira da AISCGre (Associação Internacional de Estudos de Canto Gregoriano), construído com [VitePress](https://vitepress.dev/). O conteúdo principal agora está organizado dentro da pasta `docs`, com a configuração em `docs/.vitepress/` e suporte a identidade visual inspirada em manuscritos gregorianos.
+Landing page institucional da **Seção Brasileira da AISCGre** (Associazione Internazionale Studi di Canto Gregoriano), construída com [VitePress](https://vitepress.dev/) e tema customizado inspirado em manuscritos gregorianos carolíngios.
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
-Antes de começar, certifique-se de ter instalado:
+- [Node.js](https://nodejs.org/) 20.19+ (requerido pelo VitePress 2.x)
+- `npm` (incluído no Node.js)
 
-- [Node.js](https://nodejs.org/) (versão 18 ou superior)  
-- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+## Desenvolvimento
 
-## 🚀 Instalação
-
-1. Clone o repositório (se ainda não tiver feito):
-```bash
-git clone <url-do-repositório>
-cd site-oficial-aiscgre-br
-```
-
-2. Instale as dependências:
 ```bash
 npm install
-```
-
-## 💻 Desenvolvimento
-
-Para iniciar o servidor de desenvolvimento local com o conteúdo da pasta `docs`:
-
-```bash
 npm run dev
 ```
 
-O site estará disponível em `http://localhost:5173` (ou outra porta se 5173 estiver ocupada) e utiliza hot-reload para refletir alterações nos arquivos Markdown.
+Servidor local em `http://localhost:5173`.
 
-## 🧪 Teste / Preview
-
-Para visualizar a versão de produção localmente (após o build):
+## Build e preview
 
 ```bash
-npm run build
-npm run preview
+npm run build    # Gera estáticos em docs/.vitepress/dist/
+npm run preview  # Serve o build localmente
 ```
 
-Isso irá:
-1. Gerar os arquivos estáticos do site em `docs/.vitepress/dist`
-2. Iniciar um servidor local para visualizar a versão de produção
-
-## 🏗️ Build
-
-Para gerar os arquivos estáticos do site para produção:
-
-```bash
-npm run build
-```
-
-Os arquivos gerados estarão na pasta `docs/.vitepress/dist`.
-
-## 📁 Estrutura do Projeto
+## Estrutura
 
 ```
-site-oficial-aiscgre-br/
-├── docs/                # Conteúdo do site (páginas e estrutura em markdown)
-│   ├── .vitepress/      # Configurações de tema, navegação e assets públicos
-│   ├── index.md         # Página inicial personalizada
-│   ├── sobre/           # Página institucional
-│   ├── cursos/          # Cursos e módulos
-│   ├── eventos/         # Eventos e encontros
-│   ├── publicacoes/     # Publicações acadêmicas
-│   ├── equipe/           # Coordenação e conselho
-│   ├── contato/          # Informações de contato
-│   └── lorem-ipsum.md   # Texto auxiliar para placeholder
-├── package.json         # Dependências e scripts (aponta para docs)
-├── package-lock.json    # Lockfile de dependências
-├── README.md            # Este arquivo
-└── instrucoes.md        # Briefing original para referência
+site-oficial/
+├── docs/
+│   ├── .vitepress/
+│   │   ├── config.ts           # Configuração do site e fontes
+│   │   └── theme/              # Tema customizado
+│   │       ├── Layout.vue      # Layout raiz (nav + conteúdo + footer)
+│   │       ├── HomePage.vue    # Composição da landing
+│   │       └── styles/         # CSS modular (tokens, componentes)
+│   ├── public/
+│   │   ├── brand/              # Logos oficiais AISCGre (SVG)
+│   │   └── photos/             # Fotografias e imagens
+│   └── index.md                # Entry point da landing (frontmatter only)
+├── openspec/                   # Spec-driven development — histórico
+│                                 de decisões e mudanças
+├── package.json
+└── README.md
 ```
 
-## 📝 Scripts Disponíveis
+## Identidade visual
 
-- `npm run dev` - Inicia o servidor de desenvolvimento (aponta para `docs`)  
-- `npm run build` - Gera os arquivos estáticos para produção  
-- `npm run preview` - Visualiza a versão de produção localmente  
+- Tipografia: **Source Serif 4** (variável)
+- Paleta: creme-pergaminho `#f6f1e7` · vermelho rubrical `#a02531` · tinta `#222222`
+- Logos oficiais em `docs/public/brand/` (positivo, negativo, compacto, monocromático, ícone)
 
-## 🔧 Configuração
+## Créditos de imagens
 
-Edite `docs/.vitepress/config.ts` para ajustar nav, sidebar e identidade visual. Os estilos globais ficam em `docs/.vitepress/theme/styles/index.css` e o logo está em `docs/.vitepress/public/logo.svg`.
+- **Intróito Puer natus** — Codex Einsiedeln 121, p. 30 · Stiftsbibliothek Einsiedeln / e-codices · [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- **Foto da diretoria** — [@beatrizclleal](https://www.instagram.com/beatrizclleal/)
 
-## 📚 Recursos
+## Workflow
 
-- [Documentação do VitePress](https://vitepress.dev/)  
-- [Guia de Configuração](https://vitepress.dev/reference/site-config)  
-- [Tema Padrão](https://vitepress.dev/reference/default-theme-config)
-
-## 🤝 Contribuindo
-
-1. Faça um fork do projeto  
-2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)  
-3. Commit suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)  
-4. Push para a branch (`git push origin feature/MinhaFeature`)  
-5. Abra um Pull Request
-
-## 📄 Licença
-
-[Adicione informações sobre a licença aqui]
+Este repositório adota [OpenSpec](https://github.com/Fission-AI/OpenSpec) para desenvolvimento spec-driven. As mudanças ativas e as decisões de arquitetura ficam em `openspec/changes/` e `openspec/project.md`.
