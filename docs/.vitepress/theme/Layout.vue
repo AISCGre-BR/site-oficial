@@ -11,12 +11,6 @@ const isHome = computed(() => frontmatter.value.layout === 'home')
 const menuOpen = ref(false)
 
 watch(() => route.path, () => { menuOpen.value = false })
-
-function isActive(link: string): boolean {
-  const path = route.path
-  if (link === '/') return path === '/' || path === '/index.html'
-  return path.startsWith(link)
-}
 </script>
 
 <template>
@@ -44,13 +38,11 @@ function isActive(link: string): boolean {
         </button>
 
         <nav aria-label="principal">
-          <ul id="nav-links" class="nav__links" :class="{ open: menuOpen }">
-            <li><a href="/sobre/" :class="{ active: isActive('/sobre/') }">sobre</a></li>
-            <li><a href="/cursos/" :class="{ active: isActive('/cursos/') }">cursos</a></li>
-            <li><a href="/eventos/" :class="{ active: isActive('/eventos/') }">eventos</a></li>
-            <li><a href="/biblioteca/" :class="{ active: isActive('/biblioteca/') }">biblioteca</a></li>
-            <li><a href="/noticias/" :class="{ active: isActive('/noticias/') }">notícias</a></li>
-            <li><a href="/contato" :class="{ active: isActive('/contato') }">contato</a></li>
+          <ul id="nav-links" class="nav__links" :class="{ open: menuOpen }" @click="menuOpen = false">
+            <li><a href="#aiscgre">aiscgre</a></li>
+            <li><a href="#secao-brasileira">seção brasileira</a></li>
+            <li><a href="#coros">coros</a></li>
+            <li><a href="#associe-se">associe-se</a></li>
           </ul>
         </nav>
       </div>
@@ -71,8 +63,15 @@ function isActive(link: string): boolean {
         <div class="foot__meta">
           <p>
             <strong>AISCGre — Seção Brasileira</strong><br/>
-            Associação Internacional de Estudo do Canto Gregoriano.<br/>
-            contato@aiscgre.org.br
+            Associazione Internazionale Studi di Canto Gregoriano.
+          </p>
+          <p class="foot__credits">
+            Imagem do Codex Einsiedeln 121, p. 30:
+            <a href="https://www.e-codices.unifr.ch/en/sbe/0121/30" target="_blank" rel="noopener">Stiftsbibliothek Einsiedeln / e-codices</a>,
+            sob licença
+            <a href="https://creativecommons.org/licenses/by/3.0/deed.pt" target="_blank" rel="noopener">CC&nbsp;BY&nbsp;3.0</a>.
+            Foto da diretoria:
+            <a href="https://www.instagram.com/beatrizclleal/" target="_blank" rel="noopener">@beatrizclleal</a>.
           </p>
         </div>
         <p class="foot__colophon">MMXXVI · laus deo</p>

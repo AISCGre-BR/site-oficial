@@ -1,7 +1,7 @@
 .threshold {
   background: var(--ink);
   color: var(--cream);
-  padding: var(--s-9) 0;
+  padding: clamp(var(--s-6), 8vw, var(--s-9)) 0;
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
   position: relative;
@@ -41,8 +41,8 @@
 
 .threshold__quote {
   margin: 0;
-  font-size: clamp(1.6rem, 2.6vw + 0.8rem, 2.6rem);
-  line-height: 1.22;
+  font-size: clamp(1.25rem, 2.6vw + 0.6rem, 2.6rem);
+  line-height: 1.25;
   letter-spacing: -0.012em;
   color: var(--cream);
   font-weight: 380;

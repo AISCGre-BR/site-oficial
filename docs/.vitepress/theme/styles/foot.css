@@ -1,5 +1,5 @@
 .foot {
-  margin-top: var(--s-8);
+  margin-top: clamp(var(--s-5), 6vw, var(--s-8));
   border-top: 1px solid var(--rule);
   background: var(--cream-deep);
 }
@@ -7,7 +7,7 @@
 .foot__inner {
   max-width: var(--page);
   margin: 0 auto;
-  padding: var(--s-7) var(--s-4) var(--s-5);
+  padding: clamp(var(--s-5), 5vw, var(--s-7)) var(--s-4) var(--s-5);
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   gap: var(--s-5);
@@ -25,6 +25,25 @@
 }
 
 .foot__meta strong { color: var(--ink); font-weight: 560; }
+.foot__meta p { margin: 0 0 var(--s-3); }
+.foot__meta p:last-child { margin-bottom: 0; }
+
+.foot__credits {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--ink-muted);
+  max-width: 58ch;
+}
+.foot__credits a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: color 180ms ease, border-color 180ms ease;
+}
+.foot__credits a:hover {
+  color: var(--rubric);
+  border-bottom-color: var(--rubric);
+}
 
 .foot__colophon {
   font-size: 0.72rem;

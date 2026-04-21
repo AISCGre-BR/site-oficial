@@ -1,230 +1,236 @@
+<script setup lang="ts">
+import { withBase } from 'vitepress'
+
+const photoJpg = withBase('/photos/diretoria-conselho.jpg')
+const photoWebp = withBase('/photos/diretoria-conselho.webp')
+
+const heroJpg = withBase('/photos/manuscrito-e121.jpg')
+const heroWebp = withBase('/photos/manuscrito-e121.webp')
+
+const formIndividual = 'https://docs.google.com/forms/d/e/1FAIpQLSfqifdcOtKqyOrixFthyWtdexqk1RAGR_H1XhMcS4vkI9Q3RA/viewform'
+const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igtSK2HvXdEQV8B8D1fUDJ3BnxsxpxOg/viewform'
+</script>
+
 <template>
-  <section class="hero hero--split" aria-labelledby="hero-title">
+  <!-- HERO -->
+  <section class="hero hero--split" id="inicio" aria-labelledby="hero-title">
     <div class="hero__grid hero__grid--split">
       <div class="hero__text">
         <p class="hero__kicker">associação internacional · seção brasileira</p>
         <h1 class="hero__title" id="hero-title">
-          <span class="rubric-initial">E</span>studar, ensinar e <em>cantar</em> o repertório gregoriano no Brasil.
+          <span class="rubric-initial">P</span>esquisar, ensinar e <em>cantar</em> o repertório gregoriano no Brasil.
         </h1>
         <p class="hero__dek">
-          A AISCGre Brasil reúne regentes, cantores, pesquisadores e scholas em torno do estudo semiológico do canto gregoriano. Uma rede de formação, pesquisa e prática vinculada à Associação Internacional fundada em 1975.
+          A AISCGre Brasil dá continuidade, no país, à orientação semiológica inaugurada por Dom Eugène Cardine.
         </p>
         <div class="hero__meta">
-          <a class="cta" href="/cursos/">Próximo curso em 2026</a>
-          <a class="cta cta--ghost" href="/sobre/">Sobre a associação</a>
+          <a class="cta" href="#associe-se">Associe-se</a>
+          <a class="cta cta--ghost" href="#aiscgre">Saiba mais</a>
         </div>
       </div>
 
-      <figure class="hero__figure" aria-hidden="true">
-        <div class="plate">
-          <svg class="plate__art" viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg">
-            <g class="neumes" fill="none" stroke="var(--ink-soft)" stroke-width="2" stroke-linecap="round">
-              <path d="M 70 60 Q 90 40 110 60" />
-              <path d="M 140 62 L 160 48" />
-              <path d="M 180 48 L 200 62" />
-              <path d="M 230 62 L 250 42 L 270 62" />
-              <path d="M 300 50 L 300 68" />
-              <circle cx="330" cy="58" r="3" fill="var(--rubric)" stroke="none"/>
-            </g>
-            <text x="70" y="108" fill="var(--rubric)" font-family="Source Serif 4, serif"
-                  font-size="14" letter-spacing="2.8" font-weight="600">IN NATIVITATE</text>
-            <g transform="translate(60 140)">
-              <rect x="0" y="0" width="280" height="280" fill="none" stroke="var(--rubric)" stroke-width="3"/>
-              <text x="140" y="232" text-anchor="middle" fill="var(--rubric)"
-                    font-family="Source Serif 4, serif" font-size="280"
-                    font-weight="400" font-style="italic">E</text>
-              <g transform="translate(260 24)">
-                <rect x="-10" y="-10" width="20" height="20" transform="rotate(45)"
-                      fill="none" stroke="var(--ink-soft)" stroke-width="1"/>
-                <circle cx="0" cy="0" r="1.6" fill="var(--ink-soft)"/>
-              </g>
-            </g>
-            <g fill="var(--ink-soft)" font-family="Source Serif 4, serif" font-size="13"
-               font-style="italic" font-weight="400">
-              <text x="70" y="448">dominus dixit ad me: filius meus es tu,</text>
-              <text x="70" y="466">ego hodie genui te.</text>
-            </g>
-          </svg>
+      <figure class="hero__figure">
+        <div class="plate plate--photo">
+          <picture>
+            <source :srcset="heroWebp" type="image/webp" />
+            <img :src="heroJpg" alt="Inicial P historiada em ouro e vermelho abrindo o introito Puer natus est nobis, no Codex Einsiedeln 121." />
+          </picture>
         </div>
         <figcaption class="plate__caption">
-          neumas in nativitate domini · introito do officium in primo gallicinio
+          Intróito <em>Puer natus</em> no Codex Einsiedeln 121
         </figcaption>
       </figure>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="sec-sobre">
+  <!-- O QUE É A AISCGRE -->
+  <section class="section" id="aiscgre" aria-labelledby="sec-aiscgre">
     <div class="section__inner">
-      <p class="section__label" id="sec-sobre">Quem somos</p>
+      <p class="section__label" id="sec-aiscgre">A AISCGre</p>
       <div class="section__body">
-        <h2>Uma tradição viva, lida com rigor e cantada com respiração.</h2>
+        <h2>Pesquisa, ensino e prática do canto gregoriano.</h2>
         <p>
-          Desde a fundação por Eugène Cardine e Luigi Agustoni, a Associação Internacional de Estudo do Canto Gregoriano dedica-se a recuperar a inteligência da notação neumática a partir dos manuscritos mais antigos. A seção brasileira trabalha em diálogo com scholas, dioceses e universidades, traduzindo esse rigor em formação continuada e prática litúrgica.
+          A Associação Internacional de Estudos de Canto Gregoriano dá continuidade à orientação semiológica iniciada por <em>Dom Eugène Cardine</em> (1905–1988), guiada pelo princípio da simbiose entre texto e melodia.
         </p>
-        <p><a class="cta" href="/sobre/">Conheça a seção brasileira</a></p>
-      </div>
-    </div>
-  </section>
 
-  <section class="threshold" aria-label="pausa · citação">
-    <div class="threshold__inner">
-      <p class="threshold__kicker">eugène cardine · 1968</p>
-      <blockquote class="threshold__quote">
-        Os neumas não são um enigma a decifrar —<br/>
-        são <em>uma fala antiga</em> que pede ouvido paciente.
-      </blockquote>
-    </div>
-  </section>
-
-  <section class="section section--alt" aria-labelledby="sec-curso">
-    <div class="section__inner">
-      <p class="section__label" id="sec-curso">Em destaque</p>
-      <div class="section__body">
-        <div class="feature">
-          <p class="feature__kicker">próximo curso</p>
-          <h3 class="feature__title">Introdução ao canto gregoriano e à semiologia</h3>
-          <div class="feature__meta">
-            <span><strong>datas</strong>15 a 19 · julho de 2026</span>
-            <span><strong>local</strong>São José do Rio Preto, SP</span>
-            <span><strong>status</strong>inscrições em maio</span>
+        <div class="pairs">
+          <div class="pair">
+            <h3 class="pair__title">Abordagem</h3>
+            <p>
+              A semiologia gregoriana conduz da paleografia à compreensão do significado musical e expressivo da notação neumática.
+            </p>
           </div>
-          <p><a class="cta" href="/cursos/">Programa e inscrições</a></p>
+          <div class="pair">
+            <h3 class="pair__title">Atuação</h3>
+            <p>
+              Pesquisa, publicação científica, ensino em diversos níveis e organização de cursos, conferências, concertos e gravações.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="sec-atividades">
+  <!-- THRESHOLD: contexto internacional -->
+  <section class="threshold" aria-label="contexto internacional">
+    <div class="threshold__inner">
+      <p class="threshold__kicker">contexto internacional</p>
+      <blockquote class="threshold__quote">
+        Mais de <em>700 membros</em> em <em>28 países</em>, organizados em seis seções — alemã, brasileira, espanhola, italiana, japonesa e polonesa.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- SEÇÃO BRASILEIRA + FOTO -->
+  <section class="section section--alt" id="secao-brasileira" aria-labelledby="sec-secao">
     <div class="section__inner">
-      <p class="section__label" id="sec-atividades">Atividades</p>
+      <p class="section__label" id="sec-secao">Seção Brasileira</p>
       <div class="section__body">
-        <h2>Dos manuscritos às capelas: formação, pesquisa e prática.</h2>
+        <h2>A mais recente das seções da AISCGre.</h2>
         <p>
-          Cursos anuais, encontros regionais, oficinas de paleografia, estudos de repertório e celebrações com scholas associadas compõem o calendário da seção brasileira.
+          A Seção Brasileira reúne associados de diversas regiões do país em torno da pesquisa, do ensino e da prática do canto gregoriano segundo a orientação semiológica. Seu núcleo fundador consolidou-se a partir da atuação do <strong>Prof. Dr. Clayton Júnior Dias</strong>, primeiro presidente da seção.
         </p>
-        <ul class="gallery" role="list">
-          <li class="gallery__item">
-            <div class="gallery__frame">
-              <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect width="240" height="180" fill="var(--cream-deep)"/>
-                <g fill="var(--ink-soft)" opacity="0.85">
-                  <circle cx="70" cy="90" r="14"/> <rect x="56" y="105" width="28" height="54" rx="4"/>
-                  <circle cx="110" cy="82" r="14"/> <rect x="96" y="97" width="28" height="62" rx="4"/>
-                  <circle cx="150" cy="88" r="14"/> <rect x="136" y="103" width="28" height="56" rx="4"/>
-                  <circle cx="188" cy="84" r="14"/> <rect x="174" y="99" width="28" height="60" rx="4"/>
-                </g>
-                <line x1="0" y1="160" x2="240" y2="160" stroke="var(--rubric)" stroke-width="1"/>
-              </svg>
-            </div>
-            <p class="gallery__caption">
-              <span class="gallery__date">mar · 2026</span>
-              Schola Gregoriana de Niterói · vésperas de Quaresma
-            </p>
-          </li>
-          <li class="gallery__item">
-            <div class="gallery__frame">
-              <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect width="240" height="180" fill="var(--cream-deep)"/>
-                <rect x="22" y="28" width="90" height="130" fill="var(--cream)" stroke="var(--ink-soft)" stroke-width="1"/>
-                <rect x="128" y="28" width="90" height="130" fill="var(--cream)" stroke="var(--ink-soft)" stroke-width="1"/>
-                <g stroke="var(--ink-soft)" stroke-width="0.8" fill="none">
-                  <path d="M30 54 q8 -8 16 0 M50 54 l10 -6 M62 54 l8 6 M74 52 q8 -8 16 0"/>
-                  <path d="M30 74 l60 0 M30 90 l60 0 M30 106 l60 0 M30 122 l60 0 M30 138 l60 0"/>
-                </g>
-                <text x="30" y="50" fill="var(--rubric)" font-family="serif" font-size="9"
-                      font-weight="600" letter-spacing="1.5">IN ADVENTU</text>
-                <g stroke="var(--ink-soft)" stroke-width="0.8" fill="none">
-                  <path d="M136 54 q8 -6 16 0 M156 54 l10 6 M168 52 q10 -8 18 2"/>
-                  <path d="M136 74 l60 0 M136 90 l60 0 M136 106 l60 0 M136 122 l60 0 M136 138 l60 0"/>
-                </g>
-              </svg>
-            </div>
-            <p class="gallery__caption">
-              <span class="gallery__date">nov · 2025</span>
-              Oficina de paleografia neumática · PUC-SP
-            </p>
-          </li>
-          <li class="gallery__item">
-            <div class="gallery__frame">
-              <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect width="240" height="180" fill="var(--cream-deep)"/>
-                <path d="M 40 160 L 40 80 Q 40 40 80 40 L 160 40 Q 200 40 200 80 L 200 160 Z"
-                      fill="none" stroke="var(--ink-soft)" stroke-width="1.2"/>
-                <path d="M 80 160 L 80 100 Q 80 80 100 80 L 140 80 Q 160 80 160 100 L 160 160 Z"
-                      fill="var(--cream)" stroke="var(--ink-soft)" stroke-width="1"/>
-                <circle cx="120" cy="60" r="7" fill="none" stroke="var(--rubric)" stroke-width="1"/>
-                <line x1="30" y1="160" x2="210" y2="160" stroke="var(--ink-soft)" stroke-width="1"/>
-              </svg>
-            </div>
-            <p class="gallery__caption">
-              <span class="gallery__date">set · 2025</span>
-              Encontro Nacional de Scholas · Mariana, MG
-            </p>
-          </li>
-        </ul>
+
+        <figure class="photo">
+          <div class="photo__frame">
+            <picture>
+              <source :srcset="photoWebp" type="image/webp" />
+              <img :src="photoJpg" alt="Diretoria e conselhos da AISCGre Brasil reunidos em encontro institucional." loading="lazy" />
+            </picture>
+          </div>
+          <figcaption class="photo__caption">
+            Diretoria e Conselhos da AISCGre Brasil, inclusive seu Presidente Prof. Dr. Clayton Júnior Dias, junto ao Prof. Dr. Giovanni Conti, Consultor do Dicastério para o Culto Divino e a Disciplina dos Sacramentos, vice-presidente da AISCGre Internacional e presidente da Seção Italiana.
+            <span class="photo__credit">Foto: <a href="https://www.instagram.com/beatrizclleal/" target="_blank" rel="noopener">@beatrizclleal</a></span>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <section class="section section--alt" aria-labelledby="sec-noticias">
+  <!-- COROS -->
+  <section class="section" id="coros" aria-labelledby="sec-coros">
     <div class="section__inner">
-      <p class="section__label" id="sec-noticias">Notícias</p>
+      <p class="section__label" id="sec-coros">Coros associados</p>
       <div class="section__body">
-        <ul class="edlist">
-          <li class="edlist__item">
-            <span class="edlist__date">15 · mar · 2026</span>
-            <h3 class="edlist__title"><a href="/noticias/2025-03-15-curso-2025-inscricoes">Abertas as inscrições para o curso anual de 2026 em São José do Rio Preto</a></h3>
-            <span class="edlist__meta">cursos</span>
-          </li>
-          <li class="edlist__item">
-            <span class="edlist__date">20 · jan · 2026</span>
-            <h3 class="edlist__title"><a href="/noticias/2025-01-20-parceria-universitaria">AISCGre Brasil firma parceria com programa de pós em musicologia</a></h3>
-            <span class="edlist__meta">pesquisa</span>
-          </li>
-          <li class="edlist__item">
-            <span class="edlist__date">05 · nov · 2025</span>
-            <h3 class="edlist__title"><a href="/noticias/2024-11-05-encerramento-ano">Encontro Nacional de Scholas encerra o ano com vésperas na Sé de Mariana</a></h3>
-            <span class="edlist__meta">encontros</span>
-          </li>
-          <li class="edlist__item">
-            <span class="edlist__date">18 · out · 2025</span>
-            <h3 class="edlist__title"><a href="#">Publicada a tradução brasileira de <em>Semiologia Gregoriana</em>, de Eugène Cardine</a></h3>
-            <span class="edlist__meta">publicações</span>
-          </li>
-        </ul>
-        <p style="margin-top:var(--s-5);"><a class="cta" href="/noticias/">Todas as notícias</a></p>
+        <h2>Duas categorias de vínculo.</h2>
+        <p>
+          A AISCGre Brasil acolhe coros dedicados ao canto gregoriano e coros de repertório mais amplo que respeitem os princípios da semiologia quando executam o repertório gregoriano.
+        </p>
+
+        <div class="pairs pairs--equal">
+          <div class="pair">
+            <h3 class="pair__title">Efetivos</h3>
+            <p>
+              Grupos com estudo e prática regulares segundo os princípios semiológicos reconhecidos pela AISCGre, com regente ou diretor(a) de formação comprovada na área.
+            </p>
+          </div>
+          <div class="pair">
+            <h3 class="pair__title">Afiliados</h3>
+            <p>
+              Grupos que promovem ou incluem o canto gregoriano em seu repertório litúrgico, em vínculo institucional e cultural com a associação.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="sec-conselho">
+  <!-- ASSOCIE-SE -->
+  <section class="section section--alt" id="associe-se" aria-labelledby="sec-associe">
     <div class="section__inner">
-      <p class="section__label" id="sec-conselho">Conselho Diretivo</p>
+      <p class="section__label" id="sec-associe">Associe-se</p>
       <div class="section__body">
-        <h2>Coordenação da seção brasileira.</h2>
-        <ul class="edlist edlist--people">
-          <li class="edlist__item">
-            <span class="edlist__date">presidência</span>
-            <h3 class="edlist__title">Pe. João Batista Souza</h3>
-            <span class="edlist__meta">dioc. de são paulo</span>
-          </li>
-          <li class="edlist__item">
-            <span class="edlist__date">vice-presidência</span>
-            <h3 class="edlist__title">Maria Clara Pinheiro</h3>
-            <span class="edlist__meta">ufrj · musicologia</span>
-          </li>
-          <li class="edlist__item">
-            <span class="edlist__date">secretaria</span>
-            <h3 class="edlist__title">Laércio Bernardes</h3>
-            <span class="edlist__meta">schola de mariana</span>
-          </li>
-          <li class="edlist__item">
-            <span class="edlist__date">formação</span>
-            <h3 class="edlist__title">Ir. Teresa d'Ávila Costa</h3>
-            <span class="edlist__meta">mosteiro de são bento</span>
-          </li>
-        </ul>
+        <h2>Pessoas físicas, coros e instituições são bem-vindos.</h2>
+        <p>
+          Podem associar-se quem reconheça e apoie a missão da AISCGre Brasil e tenha interesse no estudo, prática, pesquisa ou promoção do canto gregoriano. Entusiastas e apoiadores podem ser admitidos como colaboradores.
+        </p>
+
+        <div class="pairs pairs--equal cta-pairs">
+          <div class="pair">
+            <h3 class="pair__title">Pessoa física</h3>
+            <p>Estudantes, pesquisadores, regentes, cantores e apoiadores.</p>
+            <p><a class="cta" :href="formIndividual" target="_blank" rel="noopener">Formulário individual</a></p>
+          </div>
+          <div class="pair">
+            <h3 class="pair__title">Coros e instituições</h3>
+            <p>Scholas, corais litúrgicos, centros de formação e instituições culturais.</p>
+            <p><a class="cta" :href="formCoros" target="_blank" rel="noopener">Formulário para coros</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+.pairs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-6);
+  margin-top: var(--s-5);
+}
+@media (max-width: 780px) {
+  .pairs { grid-template-columns: 1fr; gap: var(--s-5); }
+}
+.pair__title {
+  font-size: 1.3rem;
+  font-weight: 540;
+  color: var(--ink);
+  margin: 0 0 var(--s-3);
+  padding-left: 1.4rem;
+  position: relative;
+  letter-spacing: -0.005em;
+}
+.pair__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px; height: 8px;
+  background: var(--rubric);
+}
+.pair p { margin: 0 0 var(--s-3); color: var(--ink-soft); }
+
+.cta-pairs .pair {
+  background: var(--surface);
+  padding: var(--s-5) var(--s-5) var(--s-4);
+  border: 1px solid var(--rule-soft);
+}
+
+.photo { margin: var(--s-6) 0 0; }
+.photo__frame {
+  background: var(--cream-deep);
+  border: 1px solid var(--rule);
+  overflow: hidden;
+}
+.photo__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.photo__caption {
+  font-size: 0.92rem;
+  color: var(--ink-muted);
+  line-height: 1.55;
+  margin-top: var(--s-3);
+  font-style: italic;
+  max-width: 62ch;
+}
+.photo__credit {
+  display: block;
+  margin-top: var(--s-2);
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  font-feature-settings: "smcp" on, "c2sc" on;
+  text-transform: lowercase;
+  color: var(--ink-muted);
+}
+.photo__credit a {
+  color: var(--rubric);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 180ms ease;
+}
+.photo__credit a:hover { border-bottom-color: var(--rubric); }
+</style>
