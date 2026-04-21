@@ -71,6 +71,35 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
     </div>
   </section>
 
+  <!-- FUNDAMENTOS ECLESIAIS -->
+  <section class="section section--alt" id="fundamentos" aria-labelledby="sec-fundamentos">
+    <div class="section__inner">
+      <p class="section__label" id="sec-fundamentos">Fundamentos</p>
+      <div class="section__body">
+        <h2>Em continuidade com o magistério da Igreja.</h2>
+        <p>
+          O trabalho da AISCGre desenvolve-se em comunhão com o Magistério e à luz do Concílio Vaticano II, que recomendou expressamente a continuidade da pesquisa científica sobre os livros de canto gregoriano.
+        </p>
+
+        <div class="citations">
+          <blockquote class="citation">
+            <p>
+              Procure terminar-se a edição típica dos livros de canto gregoriano; prepare-se uma edição mais crítica dos livros já editados depois da reforma de S. Pio X.
+            </p>
+            <cite>Concílio Vaticano II · <em>Sacrosanctum Concilium</em>, §117</cite>
+          </blockquote>
+
+          <blockquote class="citation">
+            <p>
+              A fundação da seção brasileira da AISCGre representa um passo importante no fortalecimento da pesquisa, da formação e da prática qualificada do canto gregoriano em nosso país, sempre em comunhão com o Magistério da Igreja e com o espírito do Concílio Vaticano II.
+            </p>
+            <cite>Dom Ricardo Hoepers · Secretário-Geral da CNBB<br/>Mensagem ao <em>Laudis Canticum</em> · dezembro de 2025</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- THRESHOLD: contexto internacional -->
   <section class="threshold" aria-label="contexto internacional">
     <div class="threshold__inner">
@@ -81,8 +110,8 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
     </div>
   </section>
 
-  <!-- SEÇÃO BRASILEIRA + FOTO -->
-  <section class="section section--alt" id="secao-brasileira" aria-labelledby="sec-secao">
+  <!-- SEÇÃO BRASILEIRA + FOTO + CONSELHOS -->
+  <section class="section" id="secao-brasileira" aria-labelledby="sec-secao">
     <div class="section__inner">
       <p class="section__label" id="sec-secao">Seção Brasileira</p>
       <div class="section__body">
@@ -103,12 +132,66 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
             <span class="photo__credit">Foto: <a href="https://www.instagram.com/beatrizclleal/" target="_blank" rel="noopener">@beatrizclleal</a></span>
           </figcaption>
         </figure>
+
+        <div class="board">
+          <div class="board__group">
+            <h3 class="board__title">Diretoria</h3>
+            <dl class="roster">
+              <div class="roster__row">
+                <dt>Presidente</dt>
+                <dd>Prof. Dr. Clayton Júnior Dias</dd>
+              </div>
+              <div class="roster__row">
+                <dt>Vice-presidente</dt>
+                <dd>Pe. Breno Cury Alheiro da Silva</dd>
+              </div>
+              <div class="roster__row">
+                <dt>1.º Secretário</dt>
+                <dd>Prof. Me. Diego da Silva Lima</dd>
+              </div>
+              <div class="roster__row">
+                <dt>2.º Secretário</dt>
+                <dd>William Lovato</dd>
+              </div>
+              <div class="roster__row">
+                <dt>1.º Tesoureiro</dt>
+                <dd>Pe. Filipe Gonçalves Macêdo</dd>
+              </div>
+              <div class="roster__row">
+                <dt>2.º Tesoureiro</dt>
+                <dd>Lucas Siduoski</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="board__group">
+            <h3 class="board__title">Conselho Fiscal</h3>
+            <ul class="roster roster--list">
+              <li>Edwin Aldrin Corrêa Lima</li>
+              <li>Me. Laércio Benedito Savali de Sousa</li>
+              <li>Nivaldo Aparecido de Souza Júnior</li>
+            </ul>
+          </div>
+
+          <div class="board__group">
+            <h3 class="board__title">Conselho Consultivo</h3>
+            <ul class="roster roster--list">
+              <li>Dr. Antonio Carlos Silvano Pessotti</li>
+              <li>Daniela Ayres da Rocha</li>
+              <li>Dr. Fernando Sávio da Conceição Cury</li>
+              <li>Prof. Me. Felipe Antônio Bernardo</li>
+              <li>Prof. Dr. Giovanni Conti</li>
+              <li>Me. Danilo Martins Ferreira</li>
+              <li>Prof. Dr. André Alves Gaby</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- COROS -->
-  <section class="section" id="coros" aria-labelledby="sec-coros">
+  <section class="section section--alt" id="coros" aria-labelledby="sec-coros">
     <div class="section__inner">
       <p class="section__label" id="sec-coros">Coros associados</p>
       <div class="section__body">
@@ -136,7 +219,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
   </section>
 
   <!-- ASSOCIE-SE -->
-  <section class="section section--alt" id="associe-se" aria-labelledby="sec-associe">
+  <section class="section" id="associe-se" aria-labelledby="sec-associe">
     <div class="section__inner">
       <p class="section__label" id="sec-associe">Associe-se</p>
       <div class="section__body">
@@ -233,4 +316,118 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
   transition: border-color 180ms ease;
 }
 .photo__credit a:hover { border-bottom-color: var(--rubric); }
+
+/* ---------- Citations (SC + CNBB) ---------- */
+
+.citations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-5);
+  margin-top: var(--s-5);
+}
+@media (max-width: 780px) {
+  .citations { grid-template-columns: 1fr; gap: var(--s-4); }
+}
+.citation {
+  margin: 0;
+  padding: var(--s-4) var(--s-4) var(--s-4) var(--s-4);
+  background: var(--surface);
+  border-left: 2px solid var(--rubric);
+  color: var(--ink-soft);
+}
+.citation p {
+  margin: 0 0 var(--s-3);
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.citation cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  font-feature-settings: "smcp" on, "c2sc" on;
+  text-transform: lowercase;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+.citation cite em {
+  font-style: italic;
+  font-feature-settings: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink-soft);
+}
+
+/* ---------- Board (diretoria & conselhos) ---------- */
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s-5);
+  margin-top: var(--s-7);
+  padding-top: var(--s-5);
+  border-top: 1px solid var(--rule);
+}
+@media (max-width: 900px) {
+  .board { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .board { grid-template-columns: 1fr; gap: var(--s-5); }
+}
+.board__title {
+  font-size: 0.78rem;
+  font-feature-settings: "smcp" on, "c2sc" on;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+  color: var(--rubric);
+  font-weight: 560;
+  margin: 0 0 var(--s-3);
+  padding-left: 1.2rem;
+  position: relative;
+}
+.board__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px; height: 6px;
+  background: var(--rubric);
+}
+.roster {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.roster__row {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.roster__row:last-child { border-bottom: none; }
+.roster dt {
+  font-size: 0.72rem;
+  font-feature-settings: "smcp" on, "c2sc" on;
+  text-transform: lowercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-muted);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.roster dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 440;
+}
+.roster--list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+  color: var(--ink);
+  font-weight: 440;
+}
+.roster--list li:last-child { border-bottom: none; }
 </style>

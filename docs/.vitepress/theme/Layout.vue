@@ -40,6 +40,7 @@ watch(() => route.path, () => { menuOpen.value = false })
         <nav aria-label="principal">
           <ul id="nav-links" class="nav__links" :class="{ open: menuOpen }" @click="menuOpen = false">
             <li><a href="#aiscgre">aiscgre</a></li>
+            <li><a href="#fundamentos">fundamentos</a></li>
             <li><a href="#secao-brasileira">seção brasileira</a></li>
             <li><a href="#coros">coros</a></li>
             <li><a href="#associe-se">associe-se</a></li>
