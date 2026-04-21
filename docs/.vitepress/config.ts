@@ -29,7 +29,6 @@ const nav = [
 ];
 
 export default defineConfig({
-  base: '/site-oficial/',
   title: 'AISCGre Brasil',
   description:
     'Seção Brasileira da AISCGre dedicada ao ensino, pesquisa e prática do canto gregoriano em orientação semiológica.',
