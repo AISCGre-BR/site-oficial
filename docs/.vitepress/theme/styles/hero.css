@@ -107,8 +107,6 @@
   font-size: 0.78rem;
   color: var(--ink-muted);
   letter-spacing: 0.1em;
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
   margin: var(--s-3) 0 0;
   line-height: 1.5;
   max-width: 440px;

@@ -30,11 +30,9 @@
 }
 
 .threshold__kicker {
-  font-size: 0.75rem;
+  font-size: 0.88rem;
   color: var(--rubric-soft);
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.04em;
   font-weight: 520;
   margin: 0 0 var(--s-4);
 }

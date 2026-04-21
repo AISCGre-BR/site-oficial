@@ -43,13 +43,11 @@
 
 .brand__name small {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 420;
   color: var(--ink-muted);
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
-  letter-spacing: 0.18em;
-  margin-top: 0.1rem;
+  letter-spacing: 0.04em;
+  margin-top: 0.15rem;
 }
 
 .nav__toggle {
@@ -80,11 +78,9 @@
 .nav__links a.active {
   color: var(--ink-soft);
   text-decoration: none;
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   font-weight: 500;
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.01em;
   padding: 0.35rem 0;
   border-bottom: 1px solid transparent;
   transition: color 180ms ease, border-color 180ms ease;

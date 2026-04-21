@@ -22,8 +22,7 @@
 .edlist__date {
   font-size: 0.82rem;
   color: var(--rubric);
-  font-feature-settings: "smcp" on, "c2sc" on, "lnum" on, "tnum" on;
-  text-transform: lowercase;
+  font-feature-settings: "lnum" on, "tnum" on;
   letter-spacing: 0.12em;
   font-weight: 520;
   white-space: nowrap;
@@ -53,8 +52,6 @@
 .edlist__meta {
   font-size: 0.78rem;
   color: var(--ink-muted);
-  font-feature-settings: "smcp" on, "c2sc" on;
-  text-transform: lowercase;
   letter-spacing: 0.14em;
   white-space: nowrap;
 }

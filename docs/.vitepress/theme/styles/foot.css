@@ -47,9 +47,7 @@
 
 .foot__colophon {
   font-size: 0.72rem;
-  text-transform: lowercase;
   letter-spacing: 0.2em;
-  font-feature-settings: "smcp" on, "c2sc" on;
   color: var(--ink-muted);
   text-align: right;
 }
