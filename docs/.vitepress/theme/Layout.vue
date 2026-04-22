@@ -17,9 +17,9 @@ watch(() => route.path, () => { menuOpen.value = false })
   <div class="site">
     <header class="nav" role="banner">
       <div class="nav__inner">
-        <a class="brand" href="/" aria-label="AISCGre Brasil, início">
+        <a class="brand" href="/" aria-label="AISCGre — Seção Brasileira, início">
           <img class="brand__mark" :src="iconUrl" alt="" />
-          <span class="brand__name">AISCGre Brasil<small>Seção Brasileira</small></span>
+          <span class="brand__name">AISCGre<small>Seção Brasileira</small></span>
         </a>
 
         <button
@@ -63,7 +63,7 @@ watch(() => route.path, () => { menuOpen.value = false })
         <div class="foot__meta">
           <p>
             <strong>AISCGre — Seção Brasileira</strong><br/>
-            <a href="https://www.aiscgre.org/" target="_blank" rel="noopener">Associazione Internazionale Studi di Canto Gregoriano</a>.
+            <a href="https://www.aiscgre.org/" target="_blank" rel="noopener">aiscgre.org</a>
           </p>
           <p class="foot__credits">
             Imagem do Codex Einsiedeln 121, p. 30:

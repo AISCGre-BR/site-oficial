@@ -16,12 +16,12 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
   <section class="hero hero--split" id="inicio" aria-labelledby="hero-title">
     <div class="hero__grid hero__grid--split">
       <div class="hero__text">
-        <p class="hero__kicker">Associação Internacional · Seção Brasileira</p>
+        <p class="hero__kicker"><a href="https://www.aiscgre.org/" target="_blank" rel="noopener">Associação Internacional de Estudo do Canto Gregoriano</a></p>
         <h1 class="hero__title" id="hero-title">
           <span class="rubric-initial">P</span>esquisar, ensinar e <em>interpretar</em> o repertório gregoriano no Brasil.
         </h1>
         <p class="hero__dek">
-          A AISCGre Brasil dá continuidade, no país, à orientação semiológica inaugurada por Dom Eugène Cardine, OSB.
+          A AISCGre — Seção Brasileira dá continuidade, no país, à orientação semiológica inaugurada por Dom Eugène Cardine, OSB.
         </p>
         <div class="hero__meta">
           <a class="cta" href="#pessoa-fisica">Associe-se</a>
@@ -50,7 +50,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
       <div class="section__body">
         <h2>Pesquisa, ensino e prática do canto gregoriano.</h2>
         <p>
-          A <a href="https://www.aiscgre.org/" target="_blank" rel="noopener">Associação Internacional de Estudos de Canto Gregoriano</a> dá continuidade à orientação semiológica iniciada por <em>Dom Eugène Cardine, OSB</em> (1905–1988), guiada pelo princípio da simbiose entre texto e melodia.
+          A AISCGre dá continuidade à orientação semiológica iniciada por <em>Dom Eugène Cardine, OSB</em> (1905–1988), guiada pelo princípio da simbiose entre texto e melodia.
         </p>
 
         <div class="pairs">
@@ -124,11 +124,11 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
           <div class="photo__frame">
             <picture>
               <source :srcset="photoWebp" type="image/webp" />
-              <img :src="photoJpg" alt="Diretoria e conselhos da AISCGre Brasil reunidos em encontro institucional." loading="lazy" />
+              <img :src="photoJpg" alt="Diretoria e conselhos da AISCGre — Seção Brasileira reunidos em encontro institucional." loading="lazy" />
             </picture>
           </div>
           <figcaption class="photo__caption">
-            Diretoria e Conselhos da AISCGre Brasil, inclusive seu Presidente Prof. Dr. Clayton Júnior Dias, junto ao Prof. Dr. Giovanni Conti, Consultor do Dicastério para o Culto Divino e a Disciplina dos Sacramentos, vice-presidente da AISCGre Internacional e presidente da Seção Italiana.
+            Diretoria e Conselhos da AISCGre — Seção Brasileira, inclusive seu Presidente Prof. Dr. Clayton Júnior Dias, junto ao Prof. Dr. Giovanni Conti, Consultor do Dicastério para o Culto Divino e a Disciplina dos Sacramentos, vice-presidente da AISCGre Internacional e presidente da Seção Italiana.
             <span class="photo__credit">Foto: <a href="https://www.instagram.com/beatrizclleal/" target="_blank" rel="noopener">@beatrizclleal</a></span>
           </figcaption>
         </figure>
@@ -151,7 +151,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
               </div>
               <div class="roster__row">
                 <dt>2.º Secretário</dt>
-                <dd>William Lovato</dd>
+                <dd>Willian Lovato</dd>
               </div>
               <div class="roster__row">
                 <dt>1.º Tesoureiro</dt>
@@ -197,7 +197,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
       <div class="section__body">
         <h2>Para estudantes, pesquisadores, regentes, cantores e apoiadores.</h2>
         <p>
-          Podem associar-se aqueles que reconheçam e apoiem a missão da AISCGre Brasil e tenham interesse no estudo, na prática, na pesquisa ou na promoção do canto gregoriano. Entusiastas e apoiadores podem ser admitidos como colaboradores.
+          Podem associar-se aqueles que reconheçam e apoiem a missão da AISCGre — Seção Brasileira e tenham interesse no estudo, na prática, na pesquisa ou na promoção do canto gregoriano. Entusiastas e apoiadores podem ser admitidos como colaboradores.
         </p>
         <p><a class="cta" :href="formIndividual" target="_blank" rel="noopener">Formulário Individual</a></p>
       </div>
@@ -211,7 +211,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
       <div class="section__body">
         <h2>Para Scholas, corais litúrgicos e instituições culturais.</h2>
         <p>
-          A AISCGre Brasil acolhe tanto Coros dedicados ao canto gregoriano quanto Coros de repertório mais amplo que observam os princípios da semiologia ao executar o repertório gregoriano. Os Coros associados se classificam em duas categorias:
+          A AISCGre — Seção Brasileira acolhe tanto Coros dedicados ao canto gregoriano quanto Coros de repertório mais amplo que observam os princípios da semiologia ao executar o repertório gregoriano. Os Coros associados se classificam em duas categorias:
         </p>
 
         <div class="pairs pairs--equal">
