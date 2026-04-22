@@ -16,7 +16,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
   <section class="hero hero--split" id="inicio" aria-labelledby="hero-title">
     <div class="hero__grid hero__grid--split">
       <div class="hero__text">
-        <p class="hero__kicker">Canto Gregoriano · Orientação Semiológica</p>
+        <p class="hero__kicker"><a href="https://www.aiscgre.org/" target="_blank" rel="noopener">Associação Internacional de Estudo do Canto Gregoriano</a></p>
         <h1 class="hero__title" id="hero-title">
           <span class="rubric-initial">P</span>esquisar, ensinar e <em>interpretar</em> o repertório gregoriano no Brasil.
         </h1>
@@ -50,7 +50,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
       <div class="section__body">
         <h2>Pesquisa, ensino e prática do canto gregoriano.</h2>
         <p>
-          A <a href="https://www.aiscgre.org/" target="_blank" rel="noopener">Associação Internacional de Estudo do Canto Gregoriano</a> dá continuidade à orientação semiológica iniciada por <em>Dom Eugène Cardine, OSB</em> (1905–1988), guiada pelo princípio da simbiose entre texto e melodia.
+          A AISCGre dá continuidade à orientação semiológica iniciada por <em>Dom Eugène Cardine, OSB</em> (1905–1988), guiada pelo princípio da simbiose entre texto e melodia.
         </p>
 
         <div class="pairs">
