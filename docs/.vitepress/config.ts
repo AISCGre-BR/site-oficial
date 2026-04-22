@@ -1,15 +1,15 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: 'AISCGre Brasil',
+  title: 'AISCGre — Seção Brasileira',
   description:
     'Seção Brasileira da AISCGre — pesquisa, ensino e prática do canto gregoriano sob orientação semiológica.',
   lastUpdated: true,
   head: [
     ['meta', { name: 'theme-color', content: '#f6f1e7' }],
     ['meta', { name: 'keywords', content: 'canto gregoriano, AISCGre, semiologia, neumas, schola, Cardine' }],
-    ['meta', { property: 'og:title', content: 'AISCGre Brasil — Seção Brasileira' }],
-    ['meta', { property: 'og:description', content: 'Associação Internacional de Estudos de Canto Gregoriano — Seção Brasileira.' }],
+    ['meta', { property: 'og:title', content: 'AISCGre — Seção Brasileira' }],
+    ['meta', { property: 'og:description', content: 'Associação Internacional de Estudo do Canto Gregoriano — Seção Brasileira.' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/brand/icon.svg' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -23,7 +23,7 @@ export default defineConfig({
     ]
   ],
   themeConfig: {
-    siteTitle: 'AISCGre Brasil',
+    siteTitle: 'AISCGre — Seção Brasileira',
     logo: '/brand/icon.svg'
   }
 });
