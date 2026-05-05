@@ -209,7 +209,7 @@ const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igt
     <div class="section__inner">
       <p class="section__label" id="sec-ci">Associação para Coros e Instituições</p>
       <div class="section__body">
-        <h2>Para Scholas, corais litúrgicos e instituições culturais.</h2>
+        <h2>Para <em>Scholæ</em>, corais litúrgicos e instituições culturais.</h2>
         <p>
           A AISCGre — Seção Brasileira acolhe tanto Coros dedicados ao canto gregoriano quanto Coros de repertório mais amplo que observam os princípios da semiologia ao executar o repertório gregoriano. Os Coros associados se classificam em duas categorias:
         </p>
