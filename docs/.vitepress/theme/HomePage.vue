@@ -7,8 +7,8 @@ const photoWebp = withBase('/photos/diretoria-conselho.webp')
 const heroJpg = withBase('/photos/manuscrito-e121.jpg')
 const heroWebp = withBase('/photos/manuscrito-e121.webp')
 
-const formIndividual = 'https://docs.google.com/forms/d/e/1FAIpQLSfqifdcOtKqyOrixFthyWtdexqk1RAGR_H1XhMcS4vkI9Q3RA/viewform'
-const formCoros = 'https://docs.google.com/forms/d/e/1FAIpQLSdyY68TMgq9vrj4b3igtSK2HvXdEQV8B8D1fUDJ3BnxsxpxOg/viewform'
+const formIndividual = 'https://forms.gle/e5MoEySuPeh2vAAC7'
+const formCoros = 'https://forms.gle/Ejf5At9vzqDzZQH27'
 </script>
 
 <template>
